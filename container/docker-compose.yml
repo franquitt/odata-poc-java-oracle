@@ -1,0 +1,35 @@
+version: "3.3"
+services:
+    server-java:
+        container_name: odatajavaservice
+        image: tomcat:jdk8-adoptopenjdk-openj9
+        volumes:
+            - ./webapps:/usr/local/tomcat/webapps/
+        depends_on:
+            - myconfigurator
+            - mysql
+        ports:
+            - "8080:8080"
+
+    myconfigurator:
+        container_name: odataconfigurator
+        image: alpine
+        volumes:
+            - ./scripts:/scripts
+        depends_on:
+            - mysql
+        command: sh /scripts/runner.sh
+
+    mysql:
+        container_name: odataDB
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            - MYSQL_DATABASES=eicas
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_HOST=localhost
+            - MYSQL_USER=eicas
+            - MYSQL_PASSWORD=eicaseicas
+            - MYSQL_MY_DATABASE=eicas
+        ports:
+            - "3003:3306"
