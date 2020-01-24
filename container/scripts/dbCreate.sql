@@ -25,6 +25,15 @@ CREATE TABLE IF NOT EXISTS `user` (
 	PRIMARY KEY (`userId`)
 );
 
+CREATE TABLE IF NOT EXISTS `book` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`book` VARCHAR(55),
+	`description` VARCHAR(500),
+	`cost` DOUBLE,
+	KEY `prim` (`id`) USING BTREE,
+	PRIMARY KEY (`id`)
+);
+
 INSERT INTO test(name) VALUES ('hola'),('Manola');
 
 INSERT INTO user(userName, passWord, male, birthDate, locLon, locLat) VALUES ('MadProgrammer', "akndjasn98yqwed9aby_d89abd89yasda:554dsad", 1, '1996-08-23 00:00:00', -31.4423351, -64.1924224),
@@ -35,3 +44,5 @@ INSERT INTO user(userName, passWord, male, birthDate, locLon, locLat) VALUES ('M
 ('Dr_Hyde', "akndjadsadasdasidja_dasdfagwaghaw:15fdqfe", 1, '2000-04-15 00:00:00', -31.3173213, -64.2787824),
 ('Big_O', "dasfawfwafawfasvbrw_fasfaerwyerte:aseqwrf", 1, '2000-08-22 00:00:00', -31.2478627, -64.2787237),
 ('Auto-TsT', "wetewrgeshjtjtdyhdf_dfgwegrehreag:fdsffeq", 1, '2000-08-25 00:00:00', -31.4423351, -64.2786788);
+
+INSERT INTO book(book, description, cost) VALUES ('Moby Dick', 'Impecable 0Km', 258.55);

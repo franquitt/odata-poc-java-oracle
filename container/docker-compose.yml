@@ -1,5 +1,16 @@
 version: "3.3"
 services:
+    odata-front-react:
+        build: ./frontEnd
+        container_name: "odata-front"
+        ports:
+            - 3002:3000
+        volumes:
+            - "./frontEnd/src:/app/src"
+            - "./frontEnd/public:/app/public"
+        depends_on:
+            - server-java
+
     server-java:
         container_name: odatajavaservice
         image: tomcat:jdk8-adoptopenjdk-openj9
