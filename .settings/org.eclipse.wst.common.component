@@ -5,6 +5,11 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/" source-path="/src/main/libs"/>
+        <dependent-module archiveName="ojdbc8.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/cids/Escritorio/franco/odata-poc-java-oracle/src/main/libs/ojdbc8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="MyOData"/>
         <property name="java-output-path" value="/MyOData/WebRoot/WEB-INF/classes"/>
     </wb-module>
