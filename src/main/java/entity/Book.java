@@ -11,11 +11,11 @@ public class Book {
 	@Id
 	private Integer id;
 	@Basic
-	private String book;
+	private String title;
 	@Basic
-	private double cost;
+	private double costo;
 	@Basic
-	private String description;
+	private String descripcion;
 	
 	public Integer getId() {
 		return id;
@@ -23,25 +23,25 @@ public class Book {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getBook() {
-		return book;
+	public String getTitle() {
+		return title;
 	}
-	public void setBook(String book) {
-		this.book = book;
-	}
-	
-	public double getCost() {
-		return cost;
-	}
-	public void setCost(double cost) {
-		this.cost = cost;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	
-	public String getDescription() {
-		return description;
+	public double getCosto() {
+		return costo;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setCosto(double cost) {
+		this.costo = cost;
+	}
+	
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String description) {
+		this.descripcion = description;
 	}
 	
 	
