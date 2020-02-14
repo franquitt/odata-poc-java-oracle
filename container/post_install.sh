@@ -41,4 +41,4 @@ EOF
 echo "Cleaning up"
 rm -rf /tmp/*
 echo "DataBase Installed!!!"
-gosu oracle  bash -c 'echo exit | sqlplus "/ as sysdba" @scripts/dbCreate.sql'
+gosu oracle  bash
