@@ -5,8 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.apache.olingo.odata2.api.annotation.edm.EdmEntityType;
+
 @Entity
 @Table(name="book")
+@EdmEntityType(namespace = "OData")
 public class Book {
 	@Id
 	private Integer id;

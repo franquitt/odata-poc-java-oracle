@@ -1,35 +1,16 @@
 version: "3.3"
 services:
-    odata-front-react:
-        build: ./frontEnd
-        container_name: "odata-front"
-        ports:
-            - 3002:3000
-        volumes:
-            - "./frontEnd/src:/app/src"
-            - "./frontEnd/public:/app/public"
-        depends_on:
-            - server-java
-
     server-java:
         container_name: odatajavaservice
         image: tomcat:jdk8-adoptopenjdk-openj9
         volumes:
             - ./webapps:/usr/local/tomcat/webapps/
-        depends_on:
-            - myconfigurator
-            - oracle
-        ports:
-            - "8080:8080"
-
-    myconfigurator:
-        container_name: odataconfigurator
-        image: alpine
-        volumes:
             - ./scripts:/scripts
         depends_on:
             - oracle
-        command: sh /scripts/runner.sh
+        ports:
+            - "8080:8080"
+        command: bash /scripts/conectionTester.sh
 
     oracle:
         container_name: odata-oracle-DB

@@ -1,12 +1,20 @@
 package entity;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.apache.olingo.odata2.api.annotation.edm.EdmEntityType;
+import org.apache.olingo.odata2.api.annotation.edm.EdmNavigationProperty;
+import org.apache.olingo.odata2.api.annotation.edm.EdmNavigationProperty.Multiplicity;
+import org.apache.olingo.odata2.api.annotation.edm.EdmProperty;
+
 
 /**
  * User entity. @author MyEclipse Persistence Tools
@@ -14,7 +22,8 @@ import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
-@Table(name="user")
+@Table(name="USUARIO")
+@EdmEntityType(namespace = "OData")
 public class User implements java.io.Serializable {
 
 	// Fields
@@ -26,7 +35,12 @@ public class User implements java.io.Serializable {
 	private boolean male;
 	private Timestamp birthDate;
 	private double locLon;
+	@EdmProperty
 	private double locLat;
+	
+	/*@EdmNavigationProperty(name = "Book", toType = Book.class, toMultiplicity = Multiplicity.MANY)*/
+
+	private List<Book> librosRecomendados = new ArrayList<Book>();
 
 	// Constructors
 
@@ -35,13 +49,15 @@ public class User implements java.io.Serializable {
 	}
 	/** full constructor */
 	public User(String userName, String passWord, boolean male,
-			Timestamp birthDate, double locLon, double locLat) {
+			Timestamp birthDate, double locLon, double locLat, List<Book> librosRecomendados) {
 		this.userName = userName;
 		this.passWord = passWord;
 		this.male = male;
 		this.birthDate = birthDate;
 		this.locLon = locLon;
 		this.locLat = locLat;
+		this.librosRecomendados = librosRecomendados;
+		
 	}
 
 	// Property accessors
@@ -100,6 +116,15 @@ public class User implements java.io.Serializable {
 
 	public void setLocLat(double locLat) {
 		this.locLat = locLat;
+	}
+	
+	public List<Book> getLibrosRecomendados() {
+		return librosRecomendados;
+	}
+	
+	
+	public void setLibrosRecomendados(List<Book> libros) {
+		librosRecomendados = libros;
 	}
 
 }
