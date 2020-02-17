@@ -1,3 +1,3 @@
-# OData corriendo en Java con conexion a MySQL
+# OData corriendo en Java con conexion a Oracle
 
-[Acceder una vez levantados los contenedores](http://localhost:3002/)
+[Acceder una vez levantados los contenedores](http://localhost:8080/)
