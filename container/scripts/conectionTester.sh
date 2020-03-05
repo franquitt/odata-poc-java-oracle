@@ -4,6 +4,6 @@ do
    echo "Esperando a oracle ..."
 done
 echo "Oracle is up!. Dando tiempo a configuracion"
-sleep 10
+sleep 50
 echo "Its Catalina Time!"
 catalina.sh run

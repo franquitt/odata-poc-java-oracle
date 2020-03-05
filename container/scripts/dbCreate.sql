@@ -90,3 +90,14 @@ Insert into EICAS.USUARIO_BOOK (USER_USERID,LIBROSRECOMENDADOS_ID) values ('1','
 --------------------------------------------------------
 --  Constraints for Table USUARIO_BOOK
 --------------------------------------------------------
+
+CREATE VIEW "EICAS"."USUARIOS_FRAN_VIEW" AS
+  SELECT USERID,
+USERNAME,
+MALE,
+BIRTHDATE,
+LOCLON,
+LOCLAT,
+PASSWORD
+  FROM "EICAS"."USUARIO"
+  WHERE LOCLON BETWEEN 25 AND 30;

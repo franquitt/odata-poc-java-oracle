@@ -8,6 +8,7 @@
          <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>  
          <class>entity.Book</class>
          <class>entity.User</class>
+         <class>entity.UserVIEW</class>
          <properties>  
              <property  name = "javax.persistence.jdbc.url"  value = "jdbc:oracle:thin:@oracle:1521:ORCL18"  />  
              <property  name = "javax.persistence.jdbc.driver"  value = "oracle.jdbc.OracleDriver"  />  

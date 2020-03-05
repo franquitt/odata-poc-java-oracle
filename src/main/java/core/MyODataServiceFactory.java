@@ -32,7 +32,7 @@ public class MyODataServiceFactory extends ODataJPAServiceFactory {
 		return oDataJPAContext;
 	}
 
-	@Override
+	/*@Override
 	public <T extends ODataCallback> T getCallback(Class<? extends ODataCallback> callbackInterface) {
 		// TODO Auto-generated method stub
 		T callback;
@@ -45,7 +45,7 @@ public class MyODataServiceFactory extends ODataJPAServiceFactory {
 
 		return callback;
 
-	}
+	}*/
 
 	public class MyErrorCallback implements ODataErrorCallback {
 		@Override
