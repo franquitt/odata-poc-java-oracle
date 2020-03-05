@@ -1,9 +1,9 @@
 # OData corriendo en Java con conexion a Oracle
-La finalidad de este repositorio es mostrar una rapida implementacion de **odata** en java conectada a una base de datos Oracle. Este ejemplo cuenta con un ejemplo de implementación de recursos anidados.
+La finalidad de este repositorio es mostrar una rapida implementacion de **odata** en java conectada a una base de datos Oracle. Además este ejemplo cuenta con un ejemplo de implementación de recursos anidados y de vistas de Oracle.
 
 
 ### Tecnologías:
-- Oracle
+- Oracle con vistas
 - Java
 - Olingo Odata v2
 
