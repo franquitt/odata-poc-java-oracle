@@ -1,5 +1,5 @@
 # OData corriendo en Java con conexion a Oracle
-La finalidad de este repositorio es mostrar una rapida implementacion de **odata** en java conectada a una base de datos Oracle. Además este ejemplo cuenta con un ejemplo de implementación de recursos anidados y de vistas de Oracle.
+La finalidad de este repositorio es mostrar una rapida implementacion de **odata** en java conectada a una base de datos Oracle. Además este ejemplo cuenta con un ejemplo de implementación de recursos anidados y de vistas de Oracle. Se utiliza el protocolo OData V2.
 
 
 ### Tecnologías:
@@ -9,12 +9,24 @@ La finalidad de este repositorio es mostrar una rapida implementacion de **odata
 
 
 ### Despliegue
-Esta pensado para correrse en 2 contenedores docker, uno para backend, otro para la DB y otro para el front. Para iniciarlos basta con correr en el directorio *container*:
-
+Esta pensado para correrse en 2 contenedores docker, uno para backend y otro para la DB. Para iniciar el proyecto los pasos son:
+1. Clonar el repo o descargar el repositorio:
+```bash
+	git clone https://github.com/franquitt/odata-poc-java-oracle
+```
+2. Posicionarse sobre la carpeta container y ejecutar el siguiente comando para contruir la imagen y el contenedor:
+```bash
+	cd odata-poc-java-oracle/container
+```
+3. Levantar los contenedores
+```bash
 	sudo docker-compose up
-
+```
 
 ## Uso
 Los contenedores docker van a brindar 2 servicios en los siguientes puertos
 - http://localhost:8080/odata/MyODataServiceServlet.svc/Users?$format=json  => API Endpoint de Odata
 - localhost:1521        => Oracle
+
+[ Eteam - Telecom ]
+
