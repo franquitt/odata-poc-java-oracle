@@ -36,10 +36,10 @@ class App extends React.Component {
             .then((data) => {
                 let books = data.d.results.map((book)=>{
                     return {
-                        id: book.Id,
-                        book: book.Book,
-                        cost: book.Cost,
-                        description: book.Description
+                        id: book.id,
+                        book: book.title,
+                        cost: book.costo,
+                        description: book.descripcion
                     }
                 })
                 this.setState({bookItems: books})
@@ -62,9 +62,9 @@ class App extends React.Component {
         event.preventDefault();
         if (!this.state.book) return;
         const bookItem = {
-            Book: this.state.book,
-            Cost: eval(this.state.cost),
-            Description: this.state.description
+            title: this.state.book,
+            costo: eval(this.state.cost),
+            descripcion: this.state.description
         };
 
         console.log(bookItem);
@@ -127,9 +127,9 @@ class App extends React.Component {
         const updatedCost = this.state.cost;
         const updatedDesc = this.state.description;
         const updatedObj = {
-            Book: updatedBook,
-            Cost: updatedCost,
-            Description: updatedDesc
+            title: updatedBook,
+            costo: updatedCost,
+            descripcion: updatedDesc
         };
         const updatedBookItem = Object.assign({}, this.state.bookItem, updatedObj);
         fetch(this.host + '/Books(' + this.state.bookItem.id + ')', {

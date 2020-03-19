@@ -37,8 +37,6 @@ public class User implements java.io.Serializable {
 	private double locLon;
 	@EdmProperty
 	private double locLat;
-	
-	/*@EdmNavigationProperty(name = "Book", toType = Book.class, toMultiplicity = Multiplicity.MANY)*/
 
 	private List<Book> librosRecomendados = new ArrayList<Book>();
 

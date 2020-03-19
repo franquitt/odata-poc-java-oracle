@@ -41,7 +41,8 @@ public class UserVIEW implements java.io.Serializable {
 	/*@EdmNavigationProperty(name = "Book", toType = Book.class, toMultiplicity = Multiplicity.MANY)*/
 
 	private List<Book> librosRecomendados = new ArrayList<Book>();
-
+ngrok http 8080
+docker-compose up
 	// Constructors
 
 	/** default constructor */
