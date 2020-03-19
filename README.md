@@ -22,11 +22,14 @@ Esta pensado para correrse en 2 contenedores docker, uno para backend y otro par
 ```bash
 	sudo docker-compose up
 ```
+Puede llegar a tardar hasta dos minutos levantar la DB en conjunto al backend. El proyecto estará listo cuando se entre al frontend y esten listados los libros previamente cargados de ejemplo.
 
 ## Uso
 Los contenedores docker van a brindar 2 servicios en los siguientes puertos
 - http://localhost:8080/odata/MyODataServiceServlet.svc/Users?$format=json  => API Endpoint de Odata
+- http://localhost:8080/odata/MyODataServiceServlet.svc/Books?$format=json  => API Endpoint de Odata
 - localhost:1521        => Oracle
+- localhost:3002        => FrontEnd
 
 [ Eteam - Telecom ]
 
