@@ -14,9 +14,9 @@ Esta pensado para correrse en 2 contenedores docker, uno para backend y otro par
 ```bash
 	git clone https://github.com/franquitt/odata-poc-java-oracle
 ```
-2. Posicionarse sobre la carpeta container y ejecutar el siguiente comando para contruir la imagen y el contenedor:
+2. Posicionarse sobre la carpeta y ejecutar el siguiente comando para contruir la imagen y el contenedor:
 ```bash
-	cd odata-poc-java-oracle/container
+	cd odata-poc-java-oracle
 ```
 3. Levantar los contenedores
 ```bash

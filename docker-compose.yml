@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+
+    server-java:
+        container_name: odata-server
+        build: ./
+        networks:
+            - programas_default
+        ports:
+            - "8080:8080"
+        command: catalina.sh run
+networks:
+    programas_default:
+        external: true
