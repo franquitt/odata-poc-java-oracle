@@ -10,7 +10,7 @@
          <class>entity.User</class>
          <class>entity.UserVIEW</class>
          <properties>  
-             <property  name = "javax.persistence.jdbc.url"  value = "jdbc:oracle:thin:@oracle:1521:ORCL18"  />  
+             <property  name = "javax.persistence.jdbc.url"  value = "jdbc:oracle:thin:@oracle:1521:ORCLCDB"  />  
              <property  name = "javax.persistence.jdbc.driver"  value = "oracle.jdbc.OracleDriver"  />  
              <property  name = "javax.persistence.jdbc.user"  value = "eicas"  />  
              <property  name = "javax.persistence.jdbc.password"  value = "eicaseicas"  />  

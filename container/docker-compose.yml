@@ -1,35 +1,17 @@
 version: "3.3"
 services:
-    odata-front-react:
-        build: ./frontEnd
-        container_name: "odata-front"
-        ports:
-            - 3002:3000
-        volumes:
-            - "./frontEnd/src:/app/src"
-            - "./frontEnd/public:/app/public"
-        depends_on:
-            - server-java
+
     server-java:
         container_name: odatajavaservice
         image: tomcat:jdk8-adoptopenjdk-openj9
         volumes:
             - ./webapps:/usr/local/tomcat/webapps/
             - ./scripts:/scripts
-        depends_on:
-            - oracle
+        networks:
+            - programas_default
         ports:
             - "8080:8080"
         command: bash /scripts/conectionTester.sh
-
-    oracle:
-        container_name: odata-oracle-DB
-        image: dockerhelp/docker-oracle-ee-18c
-        volumes:
-            - ./scripts:/scripts
-        command: sh scripts/runner.sh
-        ports:
-            - "1521:1521"
-        tty: true
-        stdin_open: true
-        user: root
+networks:
+    programas_default:
+        external: true
