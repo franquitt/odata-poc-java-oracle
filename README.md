@@ -26,10 +26,7 @@ Puede llegar a tardar hasta dos minutos levantar la DB en conjunto al backend. E
 
 ## Uso
 Los contenedores docker van a brindar 2 servicios en los siguientes puertos
-- http://localhost:8080/odata/MyODataServiceServlet.svc/Users?$format=json  => API Endpoint de Odata
-- http://localhost:8080/odata/MyODataServiceServlet.svc/Books?$format=json  => API Endpoint de Odata
-- localhost:1521        => Oracle
-- localhost:3002        => FrontEnd
+- http://localhost:8080/odata/odata-service.svc/Users?$format=json  => API Endpoint de Odata
+- http://localhost:8080/odata/odata-service.svc/Books?$format=json  => API Endpoint de Odata
 
 [ Eteam - Telecom ]
-

@@ -10,6 +10,8 @@ ADD ./src/main/libs/ojdbc8.jar /app/ojdbc8.jar
 #instalo la lib de oracle
 RUN mvn install:install-file -Dfile=/app/ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=19.3 -Dpackaging=jar
 
+RUN mvn dependency:go-offline
+
 WORKDIR /app
 
 #copio el resto de los scripts
