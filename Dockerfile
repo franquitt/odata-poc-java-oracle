@@ -3,22 +3,20 @@ FROM maven as builder
 RUN mkdir -p /app
 
 WORKDIR /app
-
-ADD ./pom.xml /app/pom.xml
-ADD ./src/main/libs/ojdbc8.jar /app/ojdbc8.jar
-
 #instalo la lib de oracle
+ADD ./src/main/libs/ojdbc8.jar /app/ojdbc8.jar
 RUN mvn install:install-file -Dfile=/app/ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=19.3 -Dpackaging=jar
 
-RUN mvn dependency:go-offline
+ADD ./pom.xml /app/pom.xml
 
-WORKDIR /app
+RUN mvn clean package -Dmaven.main.skip -Dmaven.test.skip && rm -r target
 
 #copio el resto de los scripts
 ADD ./ /app/
 
 #generamos el war
-RUN mvn -Dmaven.test.skip=true package
+RUN mvn clean package -Dmaven.test.skip
+
 
 #copiamos el war a /app/odata.war
 RUN cp target/MyOData*.war ./odata.war

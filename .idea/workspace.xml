@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3dd3dd3-ad67-40de-b823-b90959531678" name="Default Changelist" comment="" />
+    <list default="true" id="d3dd3dd3-ad67-40de-b823-b90959531678" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Adjuntos/dbMySQL.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Adjuntos/dbOracle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,11 +143,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -159,6 +162,8 @@
       <updated>1590264333128</updated>
       <workItem from="1590264342162" duration="1487000" />
       <workItem from="1590267336510" duration="1615000" />
+      <workItem from="1590282358593" duration="122000" />
+      <workItem from="1590502898394" duration="5055000" />
     </task>
     <servers />
   </component>
@@ -242,13 +247,21 @@
       <screen x="0" y="28" width="1366" height="739" />
     </state>
     <state width="895" height="418" key="GridCell.Tab.2.right/0.28.1366.739@0.28.1366.739" timestamp="1590269157358" />
-    <state x="343" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1590267646044">
+    <state x="343" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1590282456823">
       <screen x="0" y="28" width="1366" height="739" />
     </state>
-    <state x="343" y="225" key="com.intellij.ide.util.TipDialog/0.28.1366.739@0.28.1366.739" timestamp="1590267646044" />
+    <state x="343" y="225" key="com.intellij.ide.util.TipDialog/0.28.1366.739@0.28.1366.739" timestamp="1590282456823" />
+    <state x="0" y="28" width="688" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590506274277">
+      <screen x="0" y="28" width="1366" height="739" />
+    </state>
+    <state x="0" y="28" width="688" height="739" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1366.739@0.28.1366.739" timestamp="1590506274277" />
     <state x="4" y="28" width="1359" height="739" key="new project wizard" timestamp="1590267069022">
       <screen x="0" y="28" width="1366" height="739" />
     </state>
     <state x="4" y="28" width="1359" height="739" key="new project wizard/0.28.1366.739@0.28.1366.739" timestamp="1590267069022" />
+    <state x="346" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1590506046943">
+      <screen x="0" y="28" width="1366" height="739" />
+    </state>
+    <state x="346" y="88" width="672" height="678" key="search.everywhere.popup/0.28.1366.739@0.28.1366.739" timestamp="1590506046943" />
   </component>
 </project>

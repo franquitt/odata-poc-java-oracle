@@ -8,7 +8,7 @@ import javax.persistence.Table;
 import org.apache.olingo.odata2.api.annotation.edm.EdmEntityType;
 
 @Entity
-@Table(name="book")
+@Table(name="BOOK")
 @EdmEntityType(namespace = "OData")
 public class Book {
 	@Id

@@ -1,12 +1,27 @@
-# OData corriendo en Java con conexion a Oracle
-La finalidad de este repositorio es mostrar una rapida implementacion de **odata** en java conectada a una base de datos Oracle. Además este ejemplo cuenta con un ejemplo de implementación de recursos anidados y de vistas de Oracle. Se utiliza el protocolo OData V2.
+# OData corriendo en Java con conexion a Oracle|MySQL
+La finalidad de este repositorio es mostrar una rapida implementacion de **odata** en java conectada a una base de datos Oracle o MySQL. Además este ejemplo cuenta con una implementación de
+recursos anidados y de vistas de Oracle|MySQL. Se utiliza el protocolo OData V2.
 
 
 ### Tecnologías:
 - Oracle con vistas
 - Java
 - Olingo Odata v2
+- MySQL
 
+### Conexión con Base de Datos
+La definición de la conexión con la base de datos se presenta en el archivo ***src/main/resources/META-INF/persistence.xml***. 
+ Aquí se define el string de conexión, el driver, user y pass para la misma. Se incluyen los drivers para MySQL y Oracle en esta solución, 
+ pudiendo descomentar en el mismo archivo lo que se quiera utilizar.
+
+### Definición de recursos:
+Los recursos son definidos a través de simples clases Java dentro del directorio ***src/main/java/entity***. Estas poseen atributos, un constructor y getters y setters, ademas de ciertos
+decoradores. Este ejemplo tiene 3 recursos definidos:
+- Books
+- Usuarios
+- Vista Usuarios
+
+Además de la definición de recursos, hay que registrar los mismos dentro del archivo ***persistence.xml***.   
 
 ### Despliegue
 Esta pensado para correrse en 2 contenedores docker, uno para backend y otro para la DB. Para iniciar el proyecto los pasos son:

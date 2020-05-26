@@ -1,0 +1,46 @@
+CREATE DATABASE eicas;
+ALTER USER 'eicas'@'%' IDENTIFIED WITH mysql_native_password BY 'eicaseicas';
+GRANT ALL PRIVILEGES ON eicas.* TO 'eicas'@'%';
+FLUSH PRIVILEGES;
+
+CREATE TABLE eicas.`BOOK` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `TITLE` varchar(100) NOT NULL,
+  `COSTO` float NOT NULL,
+  `DESCRIPCION` varchar(200) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE eicas.`USUARIO` (
+  `USERID` int NOT NULL AUTO_INCREMENT,
+  `USERNAME` varchar(100) NOT NULL,
+  `MALE` tinyint NOT NULL,
+  `BIRTHDATE` timestamp NOT NULL,
+  `LOCLON` float NOT NULL,
+  `LOCLAT` float NOT NULL,
+  `PASSWORD` varchar(45) NOT NULL,
+  PRIMARY KEY (`USERID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE eicas.`USUARIO_BOOK` (
+  `USER_USERID` int NOT NULL,
+  `LIBROSRECOMENDADOS_ID` int NOT NULL,
+  PRIMARY KEY (`USER_USERID`,`LIBROSRECOMENDADOS_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+create view USUARIOS_FRAN_VIEW as
+SELECT USERID,
+       USERNAME,
+       MALE,
+       BIRTHDATE,
+       LOCLON,
+       LOCLAT,
+       PASSWORD
+FROM eicas.USUARIO
+WHERE LOCLON BETWEEN 25 AND 30
+
+INSERT INTO `BOOK` VALUES (1,'Dr Jekyll',150.8,'Excelente!!!'),(2,'Harry Potter',145.25,'Super mistico'),(3,'Moby Dick',145.25,'Ballenistico'),(4,'Peter Class',145.25,'POO');
+
+INSERT INTO `USUARIO` VALUES (1,'MadProgrammer',1,'2020-05-23 19:46:06',5.15899,6.25265,'dasfasfdas_Asdasd:ger23'),(6,'Franquitt',1,'2020-05-21 19:46:06',25.4568,64.6199,'fsdagraesewagfsdaf_fgbrwthtityxgbv:fpk3892c');
+
+INSERT INTO `USUARIO_BOOK` VALUES (1,1),(1,4),(6,3);
