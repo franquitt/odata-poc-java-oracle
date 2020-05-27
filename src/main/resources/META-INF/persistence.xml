@@ -10,14 +10,14 @@
         <class>entity.User</class>
         <class>entity.UserVIEW</class>
         <properties>
-            <property name="javax.persistence.jdbc.url"
+            <!--<property name="javax.persistence.jdbc.url"
                       value="jdbc:mysql://mysql:3306/eicas?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>-->
 
-            <!--
+            -->
                             <property  name = "javax.persistence.jdbc.url"  value = "jdbc:oracle:thin:@oracle:1521:ORCLCDB"  />
                             <property  name = "javax.persistence.jdbc.driver"  value = "oracle.jdbc.OracleDriver"  />
-            -->
+
 
 
             <property name="javax.persistence.jdbc.user" value="eicas"/>

@@ -12,7 +12,7 @@ recursos anidados y de vistas de Oracle|MySQL. Se utiliza el protocolo OData V2.
 ### Conexión con Base de Datos
 La definición de la conexión con la base de datos se presenta en el archivo ***src/main/resources/META-INF/persistence.xml***. 
  Aquí se define el string de conexión, el driver, user y pass para la misma. Se incluyen los drivers para MySQL y Oracle en esta solución, 
- pudiendo descomentar en el mismo archivo lo que se quiera utilizar.
+ pudiendo descomentar en el mismo archivo lo que se quiera utilizar. Además el proyecto es compatible para agregarle los driver de Postgres o HyperSQL.
 
 ### Definición de recursos:
 Los recursos son definidos a través de simples clases Java dentro del directorio ***src/main/java/entity***. Estas poseen atributos, un constructor y getters y setters, ademas de ciertos
@@ -44,4 +44,4 @@ Los contenedores docker van a brindar 2 servicios en los siguientes puertos
 - http://localhost:8080/odata/odata-service.svc/Users?$format=json  => API Endpoint de Odata
 - http://localhost:8080/odata/odata-service.svc/Books?$format=json  => API Endpoint de Odata
 
-[ Eteam - Telecom ]
+[ E-team - Telecom ]

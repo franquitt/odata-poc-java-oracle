@@ -6,13 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3dd3dd3-ad67-40de-b823-b90959531678" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Adjuntos/dbMySQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Adjuntos/dbOracle.sql" afterDir="false" />
+    <list default="true" id="d3dd3dd3-ad67-40de-b823-b90959531678" name="Default Changelist" comment="agregados tipos nuevos de DB en el README, cambiado default DB a MySQL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,12 +159,26 @@
       <workItem from="1590264342162" duration="1487000" />
       <workItem from="1590267336510" duration="1615000" />
       <workItem from="1590282358593" duration="122000" />
-      <workItem from="1590502898394" duration="5055000" />
+      <workItem from="1590502898394" duration="7151000" />
+      <workItem from="1590586940234" duration="1603000" />
     </task>
+    <task id="LOCAL-00001" summary="agregados scripts para DB, mejora radme, mejora Dockerfile para optimizar descargas">
+      <created>1590507990070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590507990070</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agregados scripts para DB, mejora radme, mejora Dockerfile para optimizar descargas" />
+    <MESSAGE value="agregados tipos nuevos de DB en el README, cambiado default DB a MySQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregados tipos nuevos de DB en el README, cambiado default DB a MySQL" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="812" height="684" key="#Glassfish_Server" timestamp="1590266307570">
@@ -195,6 +205,10 @@
       <screen x="0" y="28" width="1366" height="739" />
     </state>
     <state x="267" y="59" width="836" height="691" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.28.1366.739@0.28.1366.739" timestamp="1590268073139" />
+    <state x="0" y="28" width="921" height="739" key="CommitChangelistDialog2" timestamp="1590590182671">
+      <screen x="0" y="28" width="1366" height="739" />
+    </state>
+    <state x="0" y="28" width="921" height="739" key="CommitChangelistDialog2/0.28.1366.739@0.28.1366.739" timestamp="1590590182671" />
     <state x="467" y="144" width="436" height="521" key="FileChooserDialogImpl" timestamp="1590268072412">
       <screen x="0" y="28" width="1366" height="739" />
     </state>
@@ -247,6 +261,10 @@
       <screen x="0" y="28" width="1366" height="739" />
     </state>
     <state width="895" height="418" key="GridCell.Tab.2.right/0.28.1366.739@0.28.1366.739" timestamp="1590269157358" />
+    <state x="278" y="136" width="812" height="535" key="Vcs.Push.Dialog.v2" timestamp="1590507993836">
+      <screen x="0" y="28" width="1366" height="739" />
+    </state>
+    <state x="278" y="136" width="812" height="535" key="Vcs.Push.Dialog.v2/0.28.1366.739@0.28.1366.739" timestamp="1590507993836" />
     <state x="343" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1590282456823">
       <screen x="0" y="28" width="1366" height="739" />
     </state>
