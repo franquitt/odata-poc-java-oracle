@@ -21,7 +21,8 @@ decoradores. Este ejemplo tiene 3 recursos definidos:
 - Usuarios
 - Vista Usuarios
 
-Además de la definición de recursos, hay que registrar los mismos dentro del archivo ***persistence.xml***.   
+Además de la definición de recursos, hay que registrar los mismos dentro del archivo ***persistence.xml***.
+El IDE Eclipse posee una herramienta para generar dichas definiciones. Se anexa en referencias.
 
 ### Despliegue
 Esta pensado para correrse en 2 contenedores docker, uno para backend y otro para la DB. Para iniciar el proyecto los pasos son:
@@ -43,5 +44,9 @@ Puede llegar a tardar hasta dos minutos levantar la DB en conjunto al backend. E
 Los contenedores docker van a brindar 2 servicios en los siguientes puertos
 - http://localhost:8080/odata/odata-service.svc/Users?$format=json  => API Endpoint de Odata
 - http://localhost:8080/odata/odata-service.svc/Books?$format=json  => API Endpoint de Odata
+
+
+### Referencias
+- Generador de definiciones: https://www.eclipse.org/webtools/dali/docs/3.2/user_guide/tasks006.htm
 
 [ E-team - Telecom ]
